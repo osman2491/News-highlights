@@ -1,18 +1,18 @@
-from flask import render_template
-from app import app
-from .request import get_news
-@app.route('/')
+from flask import render_template,request,redirect,url_for
+from . import main
+from ..requests import get_sources,get_everything,get_top_headlines
+from ..models import 
+
+@main.route('/')
 def index():
     '''
-    view page functions that returns an index page and its data
+    view root page that returns the index and it's data
     '''
-    latest_news = get_news()
-    title = 'News Highlight application'
-    return render_template('index.html',title = title,surce = latest_news)
-    
-@app.route('/news/<int:news_id>')
-def news(news_id):
-    '''
-     view page that returns news details and its data
-    '''
-    return render_template('news.html',id = news_id)
+    sources = get_sources()
+    Everything = get_everything()
+    print(Everything)
+    print(sources)
+    title = 'News articles'
+
+    return render_template('index.html',title=title, sources = sources,Everything = Everything)
+
