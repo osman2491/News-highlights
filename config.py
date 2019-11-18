@@ -1,10 +1,10 @@
 class Config:
-    '''
-    General configuration parent class
-    '''
-    NEWS_API_BASE_URL = 'https://newsapi.org/v2/top-headlines?country=us&apiKey={}'
-
-  
+    
+    NEWS_HIGHLIGHT_API_BASE_URL ='https://newsapi.org/v2/sources?&apiKey={}'
+    NEWS_HIGHLIGHT_API_KEY = os.environ.get('NEWS_HIGHLIGHT_API_KEY')
+    SOURCES_URL_KEY = 'https://newsapi.org/v2/sources?={}apiKey={}'
+    TOP_HEADLINES_URL ='https://newsapi.org/v2/top-headlines?sources={}&apiKey={}'
+    EVERYTHING_URL_KEY ='https://newsapi.org/v2/everything?domains=wsj.com,nytimes.com&apiKey={}'
 
 
 
