@@ -1,5 +1,5 @@
 class Config:
-    
+
     NEWS_HIGHLIGHT_API_BASE_URL ='https://newsapi.org/v2/sources?&apiKey={}'
     NEWS_HIGHLIGHT_API_KEY = os.environ.get('NEWS_HIGHLIGHT_API_KEY')
     SOURCES_URL_KEY = 'https://newsapi.org/v2/sources?={}apiKey={}'
@@ -27,3 +27,9 @@ class DevConfig(Config):
     '''
 
     DEBUG = True
+    ENV = 'development'
+
+config_options = {
+    'development': DevConfig,
+    'production': ProdConfig
+}
