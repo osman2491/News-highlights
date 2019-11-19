@@ -6,7 +6,8 @@ osman mohamed
 
 # Author Contact details
 Email. osman67239121@gmail.com
-Project Description
+
+# Project Description
 A Flask application that helps preview news articles from various sources. This is achieved by aggregating news stories and article from various sources using the News Api
 
 # Set up instructions
@@ -46,7 +47,8 @@ Clone the repo in your machine but ensure you have all the necessary modules.
 Create a new branch git branch contributions
 Edit your changes in your branch
 Run the application
-Known bugs
+
+# Known bugs
 As the yet the app has no known bugs. If you find a bug please contact me at osma
 
 # Technologies used
