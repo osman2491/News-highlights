@@ -36,6 +36,29 @@ def get_sources():
             sources_results_list = get_sources_response['sources']
             sources_results = process_sources_results(sources_results_list)
 
+
+    return sources_results
+
+def process_sources_results(sources_list):
+    '''
+    Function that processes the source result and transforms a list of objects
+    Args:
+        source_list: a list of dictionaries that contain source details
+    Returns:
+        source_results: A list of source objects
+    '''
+    sources_results = []
+    for sources_item in sources_list:
+        id = sources_item.get('id')
+        url = sources_item.get('url')
+        category = sources_item.get('category')
+        language = sources_item.get('language')
+        country = sources_item.get('country')
+        name = sources_item.get('name')
+        description = sources_item.get('description')
+
+        sources_object = Sources(id,url,category,language,country,name,description)
+
     return sources_results
 
 def get_top_headlines(sources) :

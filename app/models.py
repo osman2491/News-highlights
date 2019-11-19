@@ -23,3 +23,16 @@ class Top_Headlines :
     self.urlToImage = urlToImage
     self.publishedAt = publishedAt
     self.content = content
+
+class Everything :
+  '''
+  Source class to define Everything Objects
+  '''
+  def __init__(self, author, title, description, url, urlToImage, publishedAt, content) :
+    self.author = author
+    self.title = title
+    self.description = description
+    self.url = url
+    self.urlToImage = urlToImage
+    self.publishedAt = publishedAt
+    self.content = content
