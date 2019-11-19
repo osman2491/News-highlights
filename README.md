@@ -1,7 +1,7 @@
 # Project Name
 the News highlights
 
-#Author
+# Author
 osman mohamed
 
 # Author Contact details
