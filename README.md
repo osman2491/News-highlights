@@ -49,7 +49,7 @@ Edit your changes in your branch
 Run the application
 
 # Known bugs
-As the yet the app has no known bugs. If you find a bug please contact me at osma
+As the app home and news navbars dont work. If you find more bugs please contact me at osman67239121@gmail.com
 
 # Technologies used
 Python3.7 Bootstrap
