@@ -52,4 +52,5 @@ As the yet the app has no known bugs. If you find a bug please contact me at osm
 # Technologies used
 Python3.7 Bootstrap
 
-#License
+# License
+MIT License
